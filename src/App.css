@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #282c34;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +42,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  margin: 1rem;
+  color: whitesmoke;
+  background-color: red;
+  border: 5px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 5px 7px 3px black;
+}
+
+img {
+  width: 30%;
+  border-radius: 20px;
+  margin: 0.5rem;
+  border: 5px dashed black;
+  transition: all 0.4s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 3px 10px black;
 }

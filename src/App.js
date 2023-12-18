@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import ButtonComponent from "./components/ButtonComponent";
+import ImageComponent from "./components/ImageComponent";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ImageComponent
+        src="https://upload.wikimedia.org/wikipedia/it/8/8f/Gigante_di_ferro.JPG"
+        alt="Gigante di Ferro"
+      />
+      <ImageComponent
+        src="https://media-assets.wired.it/photos/63713ce82e5d6199480baebd/16:9/w_1280,c_limit/Il%20Pianeta%20del%20Tesoro.jpg"
+        alt="Il pianeta del Tesoro"
+      />
+      <div>
+        <ButtonComponent name="First Button" />
+        <ButtonComponent name="Second Button" />
+      </div>
     </div>
   );
 }
